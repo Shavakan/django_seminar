@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 
 urlpatterns = [
-    url(r'^$', 'helloworld.views.helloworld'),
+    url(r'^$', 'helloworld.views.home'),
+    url(r'^helloworld/', 'helloworld.views.helloworld'),
     url(r'^introduce/', 'helloworld.views.introduce'),
 ]
