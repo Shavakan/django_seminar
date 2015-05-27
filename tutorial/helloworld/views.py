@@ -8,7 +8,7 @@ def home(request):
 
 
 def helloworld(request):
-    return render(request, 'helloworld.html')
+    return render(request, 'helloworld.html', {'message': 'Hello, World!'})
 
 
 def introduce(request):
