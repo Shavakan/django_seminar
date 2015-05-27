@@ -13,3 +13,14 @@ def helloworld(request):
 
 def introduce(request):
     return render(request, 'introduce.html')
+
+
+def me(request):
+    ctx = {
+        'name': 'ChangWon Lee',
+        'nickname': 'Shavakan',
+        'hobby': 'Wow',
+        'age': 24,
+        'relationship': 'single'
+    }
+    return render(request, 'me.html', ctx)

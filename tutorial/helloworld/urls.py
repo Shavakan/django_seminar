@@ -19,4 +19,5 @@ urlpatterns = [
     url(r'^$', 'helloworld.views.home'),
     url(r'^helloworld/', 'helloworld.views.helloworld'),
     url(r'^introduce/', 'helloworld.views.introduce'),
+    url(r'^me/', 'helloworld.views.me'),
 ]
