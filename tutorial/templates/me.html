@@ -4,7 +4,13 @@
     <ul>
         <li>My name is {{ name }}.</li>
         <li>My nickname is {{ nickname }}.</li>
-        <li>My hobby is {{ hobby }}.</li>
+        {% for h in hobby %}
+        {% if h == 'coding' %}
+        <li>My hobby is {{ forloop.counter}}. {{ h }}.</li>
+        {% else %}
+        <li>My hobby is {{ forloop.counter}}. SECRET. </li>
+        {% endif %}
+        {% endfor %}
         <li>My age is {{ age }}.</li>
         <li>My relationship status is {{ relationship }}. </li>
     </ul>

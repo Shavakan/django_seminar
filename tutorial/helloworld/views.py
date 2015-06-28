@@ -19,7 +19,14 @@ def me(request):
     ctx = {
         'name': 'ChangWon Lee',
         'nickname': 'Shavakan',
-        'hobby': 'Wow',
+        'hobby': [
+            'WoW',
+            'LoL',
+            'Hearthstone',
+            'Mabinogi',
+            'coding',
+            'taking a nap'
+        ],
         'age': 24,
         'relationship': 'single'
     }
